@@ -1,8 +1,5 @@
 import { render, destroy } from './utils/renderer';
-
-const data = {
-    name: 'World'
-};
+import data from './data/couponData.json'
 
 render(data);
 
