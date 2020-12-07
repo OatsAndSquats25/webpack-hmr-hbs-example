@@ -1,13 +1,13 @@
-import { render, destroy } from './components/hello/hello';
+import { render, destroy } from './utils/renderer';
 
-const options = {
-    name: 'world'
+const data = {
+    name: 'World'
 };
 
-render(options);
+render(data);
 
 if (module.hot) {
     module.hot.accept();
     destroy();
-    render(options);
+    render(data);
 }
